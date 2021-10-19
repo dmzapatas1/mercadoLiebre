@@ -17,17 +17,21 @@
 <body>
     <header class="main-header">
         <div class="main-header-top-bar">
-            <img src="/images/logo-mercado-liebre.svg" class= "logo" alt="" height="50%">
-
-            <div class="form" action="#" method="GET">
-                <input type="search">
-                <button><i class="fa fa-search"></i></button>
-            </div>
-
-            <h2 class= "copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                Compra en cuotas y sin tarjeta de crédito
-            </h2>
+            <div class="logo-search">
+                <img src="/images/logo-mercado-liebre.svg" class= "logo" alt="">
+                <div class="search-bar">
+                    <div class="form" action="#" method="GET">
+                        <input type="search">
+                        <button class="search-icon"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                </div>
+                <div>   
+                </div>
+                <h2 class= "copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Compra en cuotas y sin tarjeta de crédito
+                </h2>
         </div>
         
         <a href="#" class="burger-menu">
@@ -50,111 +54,98 @@
     <div class="home-banner">
         <img src="/images/img-home-banner.jpg" class= "home-banner-img" alt="Home banner">
     </div>
-    <form action="/crear-producto" method="POST" class="create-form">
-        <div class="control-form">
-            <label>Nombre del producto:</label>
-            <input type="text" name="nombre" class="control">
-        </div>
-        <div class="control-form">
-            <label>Precio:</label>
-            <input type="number" name="price" placeholder="123.56"  class="control">
-        </div>
-        <div class="control-form">
-            <label>Categoría</label>
-            <select name="categoria"  class="control">
-                <option value="hogar">Hogar</option>
-                <option value="electro">Electro</option>
-                <option value="indumentaria">Indumentaria</option>
-            </select>
-        </div>
-        <div class="control-form">
-            <label>Ciudad</label>
-            <select name="ciudad"  class="control">
-                <option value="ba">Buenos Aires</option>
-                <option value="ro">Rosario</option>
-                <option value="me">Medoza</option>
-            </select>
-        </div>
-        <div class="control-form">
-            <label>Descripción:</label>
-            <textarea name="descripcion"  class="control"></textarea>
-        </div>
-        <div class="control-form">
-            <label>Está en oferta:</label>
-            <input type="radio" name="enOferta">
-        </div>
-
-        <button type="reset" class="button-form">Borrar</button>
-        <button type="submit" class="button-form">Guardar</button>
-    </form>
 
     <main class="main">
+        <h4>Basado en tu última visita</h4>
         <section class="main-visit">
-            <h4>Basado en tu última visita</h4>
             <article class="main-section-products">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="" width=25%>
-                <ul type="none">
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                <div class="price-discount">
                     <li class="price">$6.770</li>
                     <li class="discount">40% OFF</li>
+                </div>
                     <li class="description"><b>Cafetera Moulinex</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-macbook-pro-2019.jpg" alt="" width=25%>
-                <ul type="none">
-                    <li class="price">$230.000</li>
-                    <li class="discount">20% off</li>
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
+                        <li class="price">$230.000</li>
+                        <li class="discount">20% off</li>
+                    </div>
                     <li class="description"><b>MacBook Pro 2019</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="" width=25%>
-                <ul type="none">
-                    <li class="price">$70.500</li>
-                    <li class="discount">10% off</li>
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
+                        <li class="price">$70.500</li>
+                        <li class="discount">10% off</li>
+                    </div>
                     <li class="description"><b>Samsung Galaxy S10"</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-tv-samsung-smart.jpg" alt="" width=25%>
-                <ul type="none">
-                    <li class="price">$23.200</li>
-                    <li class="discount">5% off</li>
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
+                        <li class="price">$23.200</li>
+                        <li class="discount">5% off</li>
+                    </div>
                     <li class="description"><b>SmartTv Samsung 43"</b></li>
                 </ul>
             </article>
         </section>
+        <h4>Sección de ofertas</h4>
         <section class="main-visit">
-            <h4>Sección de ofertas</h4>
             <article class="main-section-products">
                 <img src="/images/img-cafetera-moulinex.jpg" alt="" width=25%>
-                <ul type="none">
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                <div class="price-discount">
                     <li class="price">$6.770</li>
                     <li class="discount">40% OFF</li>
+                </div>
                     <li class="description"><b>Cafetera Moulinex</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-macbook-pro-2019.jpg" alt="" width=25%>
-                <ul type="none">
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
                     <li class="price">$230.000</li>
                     <li class="discount">20% off</li>
+                    </div>
                     <li class="description"><b>MacBook Pro 2019</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-samsung-galaxy-s10.jpg" alt="" width=25%>
-                <ul type="none">
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
                     <li class="price">$70.500</li>
                     <li class="discount">10% off</li>
+                    </div>
                     <li class="description"><b>Samsung Galaxy S10</b></li>
                 </ul>
             </article>
             <article class="main-section-products">
                 <img src="/images/img-tv-samsung-smart.jpg" alt="" width=25%>
-                <ul type="none">
+                <ul class= "product-information" type="none">
+                    <li class="send"><i class="fas fa-truck"></i></li>
+                    <div class="price-discount">
                     <li class="price">$23.200</li>
                     <li class="discount">5% off</li>
+                    </div>
                     <li class="description"><b>SmartTv Samsung 43"</b></li>
                 </ul>
             </article>
