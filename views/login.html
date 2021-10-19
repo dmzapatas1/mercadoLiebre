@@ -1,12 +1,64 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrate</title>
+    <link href="https://cdnjs.cloudﬂare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     rel="stylesheet" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <div class="main-header-top-bar">
+                <img src="/images/logo-mercado-liebre.svg" class= "logo" alt="">
+                   
+                <form class="form-search" action="#" method="GET">
+                        <input type="search">
+                        <button class="search-icon"><i class="fa fa-search"></i></button>
+                    </form>  
+                <h2 class= "copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Compra en cuotas y sin tarjeta de crédito
+                </h2>
+        </div>
+        
+        <a href="#" class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class= "left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar" style="list-style-type: none">
+                <li><a href="/register.html">Crea tu cuenta<i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login.html">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/miscompras.html">Mis compras<i class="fas fa-shopping-bag"></i></a></li>
+            </ul>  
+        </nav>
+    </header>
+    <div class="home-banner">
+        <img src="/images/img-home-banner.jpg" class= "home-banner-img" alt="Home banner">
+    </div>
+
+    <main class= "main-register">
+     <form action="/ingresar" method="POST" class="form-register">
+        <div class="control-form">
+            <label>Nombre de usuari@</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-form">
+            <label>Contraseña</label>
+            <input type="password" name="contrasena" class="control">
+        </div>
+        <button type="submit" class="button-form">Enviar</button> 
+    </form>
+</main>
 </body>
 </html>

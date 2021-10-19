@@ -14,12 +14,15 @@ body{
     padding: 15px;
 }
 
-
-.logo-search{
+.main-header-top-bar{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.logo, .search-bar{
+
+.logo{
     width: 50%;
+    padding: 10px;
 }
 
 .copy-header{
@@ -34,12 +37,17 @@ h4{
     font-size: 24px;
     color:rgb(100, 100, 100);
 }
-.form{
+
+.form-search{
     font-size: 12px;
     border-radius: 4px;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 25%;
+    padding: 10px;
 }
-
 
 .main-navbar{
     display: none;
@@ -182,41 +190,49 @@ align-items: center;
 font-size: 25px;
 padding:0px 10px 0px 10px;
 }
-/* .create-form{
-    padding:20px 15px ;
+/* register */
+.control-form{
+    margin-bottom: 20px;
+    font-style: italic;
+    padding: 10px;
 }
 
-.control-form{
-    margin-bottom: 15px;
+.control-form input{
+    width: 100%;
+    padding: 10px;
 }
 .control-form label{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-style: italic;
-    display: block;
+    display: flex;
+    align-items: center;
 }
-.control{
-    width: 100%;
-    padding: 8px;
-} */
+
+.profile-options{
+    width: 40%;
+}
+
 
 .button-form{
-    background-color: #39b54a;
+    background-color:#03264C;
     border: none;
-    font-size: 20px;
-    color:white;
-    padding: 5px 10px;
+    font-size: 18px;
+    color:#ebebeb;
+    padding: 5px 8px;
     border-radius: 5px;
 }
-@media(min-width: 768px){
-    .main-header-top-bar{
-        display: flex;
-        justify-content: space-evenly;
+@media(min-width: 481px){
+
+    .logo{
+        width: 30%;
     }
+
     .copy-header{
-        max-width: 30%;
+        width: 20%;
         text-align: right;
-        width: 90%;
+        font-size: 14px;
     }
+
     .burger-menu{
         display: none;
     }
@@ -233,6 +249,11 @@ padding:0px 10px 0px 10px;
         margin: 0 5px;
     }
     
+    .main-navbar a{
+        font-size: 12px;
+        padding: 2px;
+    }
+
 /* main */
     .main .main-visit{
         flex-flow: row wrap;
@@ -247,7 +268,7 @@ padding:0px 10px 0px 10px;
     }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 768px){
     .main-header-top-bar .main-navbar{
         max-width: 1200px;
         margin: auto;
@@ -255,13 +276,11 @@ padding:0px 10px 0px 10px;
     .main-header-top-bar{
         align-items: center;
     }
-    .logo{
-        width: 50%;
-    }
+
     .copy-header{
         margin: 0;
         max-width: 30%;
-        font-size: 24px;
+        font-size: 14px;
         font-weight: 400px;
         text-align: right;
     }
@@ -273,7 +292,7 @@ padding:0px 10px 0px 10px;
     }
 
     .main-navbar a{
-        font-size: 19px;
+        font-size: 14px;
     }
 
     .main .main-visit{
