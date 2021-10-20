@@ -123,6 +123,9 @@ text-align: center;
     display:none;
 }
 
+.main-section-products:hover .description{
+    display: block;
+}
 
 .main-section-products{
     display:flex;
@@ -130,6 +133,10 @@ text-align: center;
     border:#ebebeb solid;
     margin: 5px 0px 5px 0px;
     background-color: white;  
+}
+
+.main-section-products:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .main-section-products img{
@@ -158,7 +165,11 @@ text-align: center;
     right: 20px;
     top: -15px;
 }
- 
+.main-section-products i:hover {
+    transition: all 450ms;
+    transform: rotate(-0.25turn);
+}
+
 /* footer */
 .footer{
     display:flex;
@@ -166,6 +177,7 @@ text-align: center;
     justify-content: center;
     text-align: center;
     margin: 20px;
+    background-color: white;
 }
 .footer ul{
     margin:0 0 5px 0;
@@ -191,8 +203,15 @@ font-size: 25px;
 padding:0px 10px 0px 10px;
 }
 /* register */
+
+.main-register, .main-login{
+    margin:auto;
+    width: 60vw;
+    padding: 15px;
+    margin-top: 15px;
+}
 .control-form{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-style: italic;
     padding: 10px;
 }
@@ -212,15 +231,28 @@ padding:0px 10px 0px 10px;
     width: 40%;
 }
 
-
-.button-form{
+.main-login .button-form,.main-register .button-form {
     background-color:#03264C;
     border: none;
     font-size: 18px;
     color:#ebebeb;
     padding: 5px 8px;
     border-radius: 5px;
+    width: 50%;
+    margin: 15px;
 }
+
+.register-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+
 @media(min-width: 481px){
 
     .logo{
@@ -255,16 +287,16 @@ padding:0px 10px 0px 10px;
     }
 
 /* main */
+
+    .price-discount{
+        margin-top: 15px;
+    }
     .main .main-visit{
         flex-flow: row wrap;
     }
     .main-section-products{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
         margin: 10px;
-    }
-    .description{
-        display:block;
     }
 }
 
@@ -273,6 +305,7 @@ padding:0px 10px 0px 10px;
         max-width: 1200px;
         margin: auto;
     }
+
     .main-header-top-bar{
         align-items: center;
     }
@@ -299,8 +332,23 @@ padding:0px 10px 0px 10px;
         flex-flow: row wrap;
     }
     .main-section-products{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22%;
-        margin: 10px;
+        margin: 8px;
     }
+
+    .footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    .footer li{
+        width: 30%;
+    }
+
+    .footer li:hover i{
+        color: #39b54a;
+    }
+
 }
