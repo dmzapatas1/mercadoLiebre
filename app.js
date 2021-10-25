@@ -1,11 +1,6 @@
 const express= require('express')
 const app = express()
 const path= require('path')
-//para horoku
-//const port= process.env.PORT||3000;
-
-//decirle a express que queremos temer la carpeta public para consumir los archivos de carpetas sencillas
-//views son los html o vistas de nuestra aplicación
 const publicPath = path.resolve(__dirname,'./public');
 app.use(express.static(publicPath))
 
@@ -22,8 +17,7 @@ app.get('/login.html',(req,res)=>{
 });
  
 // para horoku
-// app.listen()
-app.listen(3000,()=> 
-{
+
+app.listen(process.env.PORT||3000,function(){
     console.log("Servidor corriendo en puerto 3000");
-});
+})
